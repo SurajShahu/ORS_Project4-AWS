@@ -1,0 +1,82 @@
+
+aws account creation
+aws free tier 
+aws account details
+sosahuu@gmail.com
+Suraj@59**
+ec2 service
+ec 2 instance create
+launch an instance
+name - orsproject4
+use ubuntu 20 or 22 version
+create a new key pair
+project4
+rsa
+.pem
+create key pair
+allow tick 3 ssh https http
+launch instance
+ip address generate 
+add rule tcp-8080
+mysql/aurora-
+add save
+
+after instance in running stage
+to connect client to server we use filezilla
+connect using ec2 instance 
+
+open cmd prompt
+cmds
+----super user--
+sudo su
+sudo apt update
+---installing jdk---
+apt install openjdk-11-jdk
+y
+---installing tomcat---
+apt install tomcat9
+y
+-----database----
+apt install mysql-server
+y
+-----filezilla-----
+filezila file ke niche vale par click name dena pro3
+select protocol sftp
+host me ip copy paste
+user m ubuntu
+key files me-- browse pem file 
+connect
+----teminal cmd----
+chmod 777 /var/lib/tomcat9/webapps     (777-read,write,execute)
+desktop pr folder m war file orpem file
+var--lib--tomcat9--webapps-- upload war file
+mysql -u root -p
+enter password-root
+
+create user "rays"@"%" identified by "indore@123";
+grant all privileges on *.* to "rays"@"%" with grant option;
+flush privileges;
+show databases;
+create database proj4;
+use proj4;
+source /var/lib/tomcat9/webapps/proj4.sql;
+select * from ST_USER;
+paste ip address in chrome and run project.
+rajatdhakad5@gmail.com
+Harda@123
+
+---------------------
+Note
+In db .sql file table name should be in capital and war file project should match tablename
+give in db.System.properties file should have configuration same as created user in aws
+
+
+
+
+
+
+
+
+
+
+
